@@ -1,7 +1,8 @@
-package fr.epsi.jeeProject.beans;
+package fr.epsi.blog.beans;
 
 import java.sql.Date;
 import java.util.List;
+import fr.epsi.blog.beans.Utilisateur;
 
 public class Blog {
 

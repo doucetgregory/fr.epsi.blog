@@ -1,4 +1,4 @@
-package fr.epsi.jeeProject.beans;
+package fr.epsi.blog.beans;
 
 import java.sql.Date;
 
