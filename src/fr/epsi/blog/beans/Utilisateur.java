@@ -80,5 +80,16 @@ public class Utilisateur {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Utilisateur{" +
+				"id=" + id +
+				", email='" + email + '\'' +
+				", nom='" + nom + '\'' +
+				", password='" + password + '\'' +
+				", dateCreation=" + dateCreation +
+				", admin=" + admin +
+				'}';
+	}
 }

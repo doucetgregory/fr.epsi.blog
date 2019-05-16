@@ -42,4 +42,13 @@ public class PingServlet extends HttpServlet {
 		}
 	}
 
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @param request
+	 * @param response
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+
+	}
+
 }
