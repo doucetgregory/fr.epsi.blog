@@ -2,16 +2,23 @@ package fr.epsi.blog.dao;
 
 import fr.epsi.blog.beans.Utilisateur;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class UtilisateurDao implements IUtilisateurDao {
 
     @Override
-    public Utilisateur getUtilisateur(String email) {
-        return null;
+    public Utilisateur getUtilisateur(String email) throws SQLException {
+
+        Connection connection = PersistenceManager.getConnection();
+
+        String requete = "SELECT id, nom, email, password, dateCreation, admin FROM user WHERE email = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(requete);
+        preparedStatement.setString(1, email);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        Utilisateur utilisateur = new Utilisateur(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4), resultSet.getDate(4), resultSet.getBoolean(5));
+
+        return utilisateur;
     }
 
     @Override

@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class PersistenceManager {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/epsi_blogbl?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/epsi_blog?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static final String DB_LOGIN = "root";
     private static final String DB_PWD = "";
 
