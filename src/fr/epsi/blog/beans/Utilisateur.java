@@ -4,17 +4,43 @@ import java.sql.Date;
 
 public class Utilisateur {
 
+	private int id;
 	private String email;
 	private String nom;
 	private String password;
 	private Date dateCreation;
 	private Boolean admin;
 
+	/**
+	 * Constructeur pour création (enregistrement BDD)
+	 * @param email
+	 * @param nom
+	 * @param password
+	 * @param admin
+	 */
 	public Utilisateur(String email, String nom, String password, Boolean admin) {
 		this.email = email;
 		this.nom = nom;
 		this.password = password;
 		this.dateCreation =  new Date(System.currentTimeMillis());
+		this.admin = admin;
+	}
+
+	/**
+	 * Constructeur pour récupération depuis BDD
+	 * @param id
+	 * @param email
+	 * @param nom
+	 * @param password
+	 * @param dateCreation
+	 * @param admin
+	 */
+	public Utilisateur(int id, String email, String nom, String password, Date dateCreation, Boolean admin) {
+		this.id = id;
+		this.email = email;
+		this.nom = nom;
+		this.password = password;
+		this.dateCreation = dateCreation;
 		this.admin = admin;
 	}
 
@@ -47,6 +73,12 @@ public class Utilisateur {
 	}
 	public void setAdmin(Boolean admin) {
 		this.admin = admin;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 }

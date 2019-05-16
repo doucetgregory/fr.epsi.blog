@@ -26,6 +26,8 @@ public class EnregistrementServlet {
         String email = request.getParameter("utilisateur_email");
         String mdp = request.getParameter("utilisateur_mdp");
         String admin = request.getParameter("utilisateur_admin");
+
+        Utilisateur utilisateur = new Utilisateur()
 /*
         if (userName.toLowerCase().equals(userNameDefault.toLowerCase()) && userMdp.equals(userMdpDefault)) {
             Utilisateur user = new Utilisateur("doucet@douc.fr", userName, userMdp);
