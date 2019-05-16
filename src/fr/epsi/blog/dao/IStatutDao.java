@@ -1,8 +1,8 @@
-package fr.epsi.jeeProject.dao;
+package fr.epsi.blog.dao;
 
 import java.util.List;
 
-import fr.epsi.jeeProject.beans.Statut;
+import fr.epsi.blog.beans.Statut;
 
 public interface IStatutDao {
 

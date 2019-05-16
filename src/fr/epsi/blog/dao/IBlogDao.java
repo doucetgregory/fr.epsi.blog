@@ -1,11 +1,11 @@
-package fr.epsi.jeeProject.dao;
+package fr.epsi.blog.dao;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import fr.epsi.jeeProject.beans.Blog;
-import fr.epsi.jeeProject.beans.Reponse;
-import fr.epsi.jeeProject.beans.Utilisateur;
+import fr.epsi.blog.beans.Blog;
+import fr.epsi.blog.beans.Reponse;
+import fr.epsi.blog.beans.Utilisateur;
 
 public interface IBlogDao {
 

@@ -1,8 +1,8 @@
-package fr.epsi.jeeProject.dao;
+package fr.epsi.blog.dao;
 
 import java.sql.SQLException;
 
-import fr.epsi.jeeProject.beans.Utilisateur;
+import fr.epsi.blog.beans.Utilisateur;
 
 public interface IUtilisateurDao {
 
