@@ -7,9 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="883461b3-8c2d-4ce8-a013-fdab5e6adc83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/blog/beans/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/blog/beans/Utilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/epsi/blog/dao/UtilisateurDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/fr_epsi_blog_war_exploded/WEB-INF/classes/fr/epsi/blog/servlets/EnregistrementServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/fr_epsi_blog_war_exploded/WEB-INF/classes/fr/epsi/blog/servlets/EnregistrementServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/fr_epsi_blog_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/fr_epsi_blog_war_exploded/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fr.epsi.blog/fr/epsi/blog/servlets/EnregistrementServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fr.epsi.blog/fr/epsi/blog/servlets/EnregistrementServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/epsi/blog/servlets/EnregistrementServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/blog/servlets/EnregistrementServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/blog/servlets/PingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/blog/servlets/PingServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,10 +27,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/servlets/EnregistrementServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            <state relative-caret-position="273">
+              <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/dao/UtilisateurDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="86">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -117,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/servlets/PingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="595">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +148,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -151,8 +168,9 @@
         <option value="$PROJECT_DIR$/src/fr/epsi/blog/dao/IUtilisateurDao.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/blog/dao/IBlogDao.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/blog/beans/Utilisateur.java" />
-        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/src/fr/epsi/blog/servlets/PingServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/src/fr/epsi/blog/dao/UtilisateurDao.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/blog/servlets/EnregistrementServlet.java" />
       </list>
     </option>
@@ -242,7 +260,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558030022027" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558031066247" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql-connector-java-5.1.47.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -269,7 +287,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/fr_epsi_blog_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/fr_epsi_blog_war_exploded" />
       <option name="BROWSER_ID" value="53e2f627-b1a7-4dfa-bfa7-5b83cc034776" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -418,12 +436,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558006329843</updated>
       <workItem from="1558006334967" duration="5246000" />
-      <workItem from="1558026442151" duration="3417000" />
+      <workItem from="1558026442151" duration="4459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8663000" />
+    <option name="totallyTimeSpent" value="9705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -448,7 +466,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="bottom" id="Run" order="9" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.61538464" />
+      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.61538464" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
@@ -550,27 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/servlets/PingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/beans/Utilisateur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -604,10 +601,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/servlets/PingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/dao/UtilisateurDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/blog/servlets/EnregistrementServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="273">
+          <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

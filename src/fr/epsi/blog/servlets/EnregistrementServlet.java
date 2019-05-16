@@ -1,11 +1,16 @@
 package fr.epsi.blog.servlets;
 
 import fr.epsi.blog.beans.Utilisateur;
+import fr.epsi.blog.dao.PersistenceManager;
+import fr.epsi.blog.dao.UtilisateurDao;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 /**
@@ -17,7 +22,7 @@ public class EnregistrementServlet extends HttpServlet {
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      * @param request
-     * @param responseion de
+     * @param response
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
@@ -26,13 +31,22 @@ public class EnregistrementServlet extends HttpServlet {
         String mdp = request.getParameter("utilisateur_mdp");
         System.out.println(request.getParameter("utilisateur_admin"));
         boolean admin = false;
-        if (Integer.parseInt(request.getParameter("utilisateur_admin")) == 1) {
+        if (request.getParameter("utilisateur_admin") == "admin") {
             admin = true;
         }
 
         Utilisateur utilisateur = new Utilisateur(nom, email, mdp, admin);
 
         System.out.println(utilisateur);
+
+        UtilisateurDao utilisateurDao = new UtilisateurDao();
+
+        try {
+            utilisateurDao.createUtilisateur(utilisateur);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("Requete SQL creation utilisateur erroné !");
+        }
 
     }
 
