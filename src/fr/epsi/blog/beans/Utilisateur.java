@@ -5,8 +5,8 @@ import java.sql.Date;
 public class Utilisateur {
 
 	private int id;
-	private String email;
 	private String nom;
+	private String email;
 	private String password;
 	private Date dateCreation;
 	private Boolean admin;

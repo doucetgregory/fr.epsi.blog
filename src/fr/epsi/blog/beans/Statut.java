@@ -1,14 +1,21 @@
 package fr.epsi.blog.beans;
 
+
+
 public class Statut {
 
-	private Integer id;
+	private int id;
 	private String description;
+	public Statut(int id, String description) {
+		this.id = id;
+		this.description = description;
+
+	}
 	
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getDescription() {

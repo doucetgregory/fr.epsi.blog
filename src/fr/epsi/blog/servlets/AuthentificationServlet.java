@@ -21,15 +21,17 @@ public class AuthentificationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
 
         UtilisateurDao utilisateurDao = new UtilisateurDao();
-        String email = request.getParameter("utilisateur_email");
-        String mdp = request.getParameter("utilisateur_mdp");
+        String email = request.getParameter("utilisateur_getEmail");
+        String mdp = request.getParameter("utilisateur_getPassword");
 
         try {
-            Utilisateur utilisateur = utilisateurDao.getUtilisateur(email);
+            Utilisateur utilisateur = utilisateurDao.getUtilisateur(email,mdp);
             System.out.println(utilisateur);
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Requete erroné !! Recupere un utilisateur");
+
+
         }
 
 

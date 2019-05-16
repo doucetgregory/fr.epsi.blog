@@ -9,18 +9,19 @@ public class Blog {
 	private Integer id;
 	private String titre;
 	private String description;
+	private Integer nbVue;
 	private Utilisateur createur;
 	private Date dateCreation;
 	private Date dateModification;
 	private Statut statut;
-	private List<Reponse> listOfReponses;
+	//private List<Reponse> listOfReponses;
 	
-	public List<Reponse> getListOfReponses() {
-		return listOfReponses;
-	}
-	public void setListOfReponses(List<Reponse> listOfReponses) {
-		this.listOfReponses = listOfReponses;
-	}
+//	public List<Reponse> getListOfReponses() {
+//		return listOfReponses;
+//	}
+//	public void setListOfReponses(List<Reponse> listOfReponses) {
+//		this.listOfReponses = listOfReponses;
+//	}
 	public Integer getId() {
 		return id;
 	}
@@ -63,5 +64,12 @@ public class Blog {
 	public void setStatut(Statut statut) {
 		this.statut = statut;
 	}
-	
+
+	public Integer getNbVue() {
+		return nbVue;
+	}
+
+	public void setNbVue(Integer nbVue) {
+		this.nbVue = nbVue;
+	}
 }
