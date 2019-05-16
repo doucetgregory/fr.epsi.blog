@@ -3,6 +3,7 @@ package fr.epsi.blog.dao;
 import fr.epsi.blog.beans.Utilisateur;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -17,8 +18,16 @@ public class UtilisateurDao implements IUtilisateurDao {
     public void createUtilisateur(Utilisateur utilisateur) throws SQLException {
 
         Connection connection = PersistenceManager.getConnection();
-        Statement statement = connection.createStatement();
-        statement.executeUpdate("INSERT INTO user(nom, email, password, dateCreation, admin) VALUES(" + utilisateur.getNom() + ", " + utilisateur.getEmail() + ", " + utilisateur.getPassword() + ", " + utilisateur.getDateCreation() + ", " + utilisateur.getAdmin() + ");");
+
+        String requete = "INSERT INTO user(nom, email, password, dateCreation, admin) VALUES(?,?,?,?,?);";
+        PreparedStatement preparedStatement = connection.prepareStatement(requete);
+        preparedStatement.setString(1, utilisateur.getNom());
+        preparedStatement.setString(2, utilisateur.getEmail());
+        preparedStatement.setString(3, utilisateur.getPassword());
+        preparedStatement.setDate(4, utilisateur.getDateCreation());
+        preparedStatement.setBoolean(5, utilisateur.getAdmin());
+
+        preparedStatement.executeUpdate();
 
     }
 
