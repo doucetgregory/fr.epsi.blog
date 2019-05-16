@@ -14,7 +14,7 @@ import java.sql.Statement;
 
 
 /**
- * Servlet implementation class PingServlet
+ * Servlet implementation class EnregistrementServlet
  */
 @WebServlet("/Enregistrement")
 public class EnregistrementServlet extends HttpServlet {
