@@ -11,7 +11,7 @@ public interface IBlogDao {
 
 	Blog getBlog(Integer id) throws SQLException;
 	List<Blog> getBlogs(Utilisateur utilisateur);
-	Integer createBlog(Blog blog) throws SQLException;
+	Integer createBlog(Blog blog, Utilisateur user) throws SQLException;
 	void updateBlog(Blog blog) throws SQLException;
 	void deleteBlog(Blog blog) throws SQLException;
 	void addReponse(Blog blog, Reponse reponse) throws SQLException;

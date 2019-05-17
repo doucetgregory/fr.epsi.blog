@@ -15,8 +15,20 @@ public class Blog {
 	private Date dateModification;
 	private Statut statut;
 	//private List<Reponse> listOfReponses;
-	
-//	public List<Reponse> getListOfReponses() {
+
+
+	public Blog(Integer id, String titre, String description, Integer nbVue, Utilisateur createur, Date dateCreation, Date dateModification, Statut statut) {
+		this.id = id;
+		this.titre = titre;
+		this.description = description;
+		this.nbVue = nbVue;
+		this.createur = createur;
+		this.dateCreation = dateCreation;
+		this.dateModification = dateModification;
+		this.statut = statut;
+	}
+
+	//	public List<Reponse> getListOfReponses() {
 //		return listOfReponses;
 //	}
 //	public void setListOfReponses(List<Reponse> listOfReponses) {
