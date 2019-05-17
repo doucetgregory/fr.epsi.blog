@@ -39,7 +39,7 @@ public class BlogDao implements IBlogDao {
     }
 
     @Override
-    public Integer createBlog(Blog blog) throws SQLException {
+    public Integer createBlog(Blog blog, Utilisateur user) throws SQLException {
         Connection connection = PersistenceManager.getConnection();
 
         String requete = "INSERT INTO post(titre, description, status, dateCreation,auteur) VALUES(?,?,?,?,?);";
@@ -51,9 +51,11 @@ public class BlogDao implements IBlogDao {
         preparedStatement.setString(2,blog.getDescription());
         preparedStatement.setString(3,"Create");
         preparedStatement.setDate(4,blog.getDateCreation());
-        preparedStatement.setInt(5,Utilisateur.getId());
+        preparedStatement.setInt(5,user.getId());
 
         preparedStatement.executeUpdate();
+
+        return null;
     }
 
     @Override
