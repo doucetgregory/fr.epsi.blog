@@ -28,3 +28,4 @@ out/production/fr.epsi.blog/fr/epsi/blog/beans/Utilisateur.class
 out/production/fr.epsi.blog/fr/epsi/blog/dao/IBlogDao.class
 out/production/fr.epsi.blog/fr/epsi/blog/servlets/AuthentificationServlet.class
 .idea/workspace.xml
+.idea/workspace.xml
