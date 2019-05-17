@@ -74,7 +74,7 @@ public class Utilisateur {
 	public void setAdmin(Boolean admin) {
 		this.admin = admin;
 	}
-	public int getId() {
+	public static int getId() {
 		return id;
 	}
 	public void setId(int id) {
