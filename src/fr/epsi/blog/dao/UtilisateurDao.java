@@ -31,8 +31,8 @@ public class UtilisateurDao implements IUtilisateurDao {
 
         String requete = "INSERT INTO user(nom, email, password, dateCreation, admin) VALUES(?,?,?,?,?);";
         PreparedStatement preparedStatement = connection.prepareStatement(requete);
-        preparedStatement.setString(1, utilisateur.getNom());
-        preparedStatement.setString(2, utilisateur.getEmail());
+        preparedStatement.setString(1, utilisateur.getEmail());
+        preparedStatement.setString(2, utilisateur.getNom());
         preparedStatement.setString(3, utilisateur.getPassword());
         preparedStatement.setDate(4, utilisateur.getDateCreation());
         preparedStatement.setBoolean(5, utilisateur.getAdmin());
