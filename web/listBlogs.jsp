@@ -13,7 +13,7 @@
 <body>
 
 <%
-    String titre = request.getParameter("book");
+    String titre = request.getParameter("titre");
     String description = request.getParameter("description");
     String auteur = request.getParameter("auteur");
     String dateCreation = request.getParameter("dateCreation");

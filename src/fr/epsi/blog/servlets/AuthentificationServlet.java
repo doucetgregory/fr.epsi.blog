@@ -30,13 +30,13 @@ public class AuthentificationServlet extends HttpServlet {
             Utilisateur utilisateur = utilisateurDao.getUtilisateur(email,mdp);
             System.out.println(utilisateur);
             if (utilisateur.getEmail() != null || utilisateur.getEmail().length() > 0) {
-                request.getRequestDispatcher("listBlogs.jsp").forward(request,response);
+
+                response.sendRedirect("http://localhost:8080/fr_epsi_blog_war_exploded/ListBlogs");
+                //request.getRequestDispatcher("listBlogs.jsp").forward(request,response);
             }
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Requete erroné !! Recupere un utilisateur");
-        } catch (ServletException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
